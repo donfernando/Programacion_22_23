@@ -1,0 +1,20 @@
+# Idioma español
+#
+
+#titulo aplicacion
+titulo=Recogida de datos personales
+
+!Datos personales
+nombre=¿Cuál es su nombre?:
+profesion=¿En que trabaja?:
+mail=Correo Electronico:
+direccion=Dirección:
+telefono=Teléfono:
+
+#eleccion de idioma
+elec_idioma=¿En qué idioma desea ser atendido?
+es=Español
+en=Ingles
+
+!Despedida
+gracias=Gracias por sus respuestas.

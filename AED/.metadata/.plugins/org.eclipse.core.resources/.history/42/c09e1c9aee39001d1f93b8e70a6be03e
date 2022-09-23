@@ -1,0 +1,31 @@
+# Idioma español
+#
+
+#titulo aplicacion
+titulo=Aplicación Multilenguaje
+
+!Datos personales
+titulo_datos=Datos Personales
+nombre=Nombre:
+Apellidos=Apellidos:
+mail=Correo Electronico:
+dir=Dirección:
+fono=Telefono:
+
+#salir
+salir=Salir
+
+! menu
+archivo=Archivo
+nuevo=Nuevo
+abrir=Abrir...
+guardar=Guardar como...
+!Salir
+
+herramientas=Herramientas
+es=Español
+en=Ingles
+
+ayuda=Ayuda
+enlinea=Ayuda en linea...
+acerca=Acerca de...

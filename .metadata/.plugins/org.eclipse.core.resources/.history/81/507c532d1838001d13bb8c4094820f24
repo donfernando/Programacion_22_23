@@ -1,0 +1,10 @@
+package pq01;
+
+public class ListarFicheros {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+int main (void)
+{
+    int i;
+    int padre;
+    pid_t hijo;
+    padre = 1;
+    for (i=0; i < 3; i++) {
+        if (padre == 1) {
+            if ((hijo = fork()) == 0) { /* Proceso hijo */
+                fprintf(stdout, "%d - Este es el proceso con PID %ld, hijo de  %ld\n", i, (long)getpid(), (long)getppid());
+                padre = 0;
+            } else { /* Proceso padre */
+                fprintf(stdout, "%d - Este es el proceso padre de %ld, y tengo PID %ld\n", i, (long)hijo, (long)getpid());
+            }
+        }
+    }
+    return 0;
+ }

@@ -1,0 +1,30 @@
+package pq01;
+
+import java.io.*;
+
+public class LeerFichero {
+
+	String archivo;
+	String linea = "";
+
+	public LeerFichero(String archivo) {
+		this.archivo = archivo;
+	}
+
+	public void muestraContenido() throws FileNotFoundException, IOException {
+		String cadena;
+		FileReader f = new FileReader(archivo);
+		BufferedReader b = new BufferedReader(f);
+		while ((cadena = b.readLine()) != null) {
+			System.out.println(cadena);
+			linea = linea + cadena + "\n";
+		}
+		b.close();
+		System.out.println(linea);
+	}
+
+	public String get() {
+		return linea;
+
+	}
+}

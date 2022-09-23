@@ -1,0 +1,51 @@
+package treeFile;
+
+import java.io.File;
+
+public class ListarFile {
+
+	public static void main(String[] args) {
+		File[] listado;
+		// File f = new File(/*args[0]*/ "recursos"+File.separator+"coordenadas.txt" );
+		File f = new File("recursos");
+		System.out.println(f.getAbsolutePath());
+		System.out.printf(" %s existe\n", (f.exists() ? "sí" : "no"));
+
+		/*
+		 * f = new File("."); File[] lista = f.listFiles(); for (int i = 0; i <
+		 * lista.length; i++) { System.out.println(lista[i].getAbsolutePath());
+		 * 
+		 * }
+		 */
+		directoriedad(f);
+	}
+
+	public static void directoriedad(File f) {
+		//File f_ = null;
+		
+//System.out.println
+("* ");
+		if (f.isDirectory()) {
+			//int cont = 0;
+			File [] listado = f.listFiles();
+			for (File file : listado) {
+				if (file.isDirectory()) {
+					//cont++;
+					System.out.println("* " + file);
+					File f2 = new File(file.getAbsolutePath()); 
+					directoriedad(f2);
+					/*for(int i = 0; i < cont; i++) {
+						System.out.print("|");
+					}*/
+				}
+				else {
+					System.out.println(file);
+					//f_ = file;
+				}
+			}
+		}
+		//return f_;
+		
+		}
+
+}

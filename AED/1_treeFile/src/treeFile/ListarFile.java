@@ -1,0 +1,31 @@
+package treeFile;
+
+import java.io.File;
+
+public class ListarFile {
+
+	public static void main(String[] args) {
+		if (args.length == 0) {
+			System.out.println("Formato: java -jar treeFile.jar <directorio>");
+			System.exit(0);
+		}
+		File f = new File(args[0]);
+		if (f.isDirectory()) {
+			listar("",f);
+		} else
+			System.out.println(f.getName());
+	}
+
+	public static void listar(String prefijo,File dir) {
+		File[] listado = dir.listFiles();
+		System.out.println(prefijo+"->"+ dir.getName());
+		prefijo += "--"; 
+		for (File file : listado) {
+			if (file.isDirectory()) {
+				listar(prefijo,file);
+			} else {
+				System.out.println(prefijo+file.getName());
+			}
+		}
+	}
+}

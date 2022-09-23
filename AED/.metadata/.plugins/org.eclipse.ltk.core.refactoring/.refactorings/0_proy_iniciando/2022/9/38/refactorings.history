@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;programa_01/src/pq01.basicos&apos;&#x0A;- Original project: &apos;programa_01&apos;&#x0A;- Destination element: &apos;programa_01/src/pq01.basicos&apos;&#x0A;- Original elements:&#x0A;     pq01.LeerFichero.java&#x0A;     pq01.LeerFichero_v2.java&#x0A;     pq01.ListarFicheros.java&#x0A;     pq01.Punto.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;pq01.basicos" element1="/src&lt;pq01{LeerFichero.java" element2="/src&lt;pq01{LeerFichero_v2.java" element3="/src&lt;pq01{ListarFicheros.java" element4="/src&lt;pq01{Punto.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1663679120166" units="4" version="1.0"/>
+</session>

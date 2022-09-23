@@ -1,0 +1,22 @@
+package main;
+
+import java.util.Enumeration;
+
+import idiomas.NProperties;
+
+public class Cuestionario {
+
+	public static void main(String[] args) {
+		NProperties props = new NProperties("EN");
+		Enumeration<Object> claves = props.keys();
+		String clave;
+		while(claves.hasMoreElements()) {
+			clave = claves.nextElement().toString();
+			System.out.println(clave + "---> "+props.getProperty(clave));
+		}
+//		for (String clave : props.stringPropertyNames()) {
+//			System.out.println(clave + "---> "+props.getProperty(clave));
+//		}
+	}
+
+}

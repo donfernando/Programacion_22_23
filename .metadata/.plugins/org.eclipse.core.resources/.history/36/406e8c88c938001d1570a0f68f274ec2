@@ -1,0 +1,35 @@
+package treeFile;
+
+import java.io.File;
+
+public class ListarFile {
+
+	public static void main(String[] args) {
+		if (args.length == 0) {
+			System.out.println("Formato: java -jar treeFile.jar <directorio>");
+			System.exit(0);
+		}
+		File[] listado;
+		File f = new File(args[0]);
+		System.out.println(f.getAbsolutePath());
+		System.out.printf("Este fichero %s existe\n", f.exists() ? "sí" : "no");
+		if (f.isDirectory()) {
+			System.out.println("* " + f.getName());
+			directoriedad(f);
+		} else
+			System.out.println(f.getName());
+	}
+
+	public static void directoriedad(File dir) {
+		File[] listado = dir.listFiles();
+		for (File file : listado) {
+			if (file.isDirectory()) {
+				System.out.println("* " + file.getName());
+				directoriedad(file);
+			} else {
+				System.out.println(file.getName());
+			}
+		}
+	}
+
+}

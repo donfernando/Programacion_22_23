@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;2_multiIdioma/src/idiomas/_ES&apos; to &apos;_ES.properties&apos;" description="Rename resource &apos;_ES&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/idiomas/_ES" name="_ES.properties" stamp="1663792374571" updateReferences="true"/>
+</session>
