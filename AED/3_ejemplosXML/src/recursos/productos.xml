@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<productos>
+	<proveedor>
+		<nombre>Juan Cruz S.A.</nombre>
+	</proveedor>
+
+ 	<producto>
+		<nombre>Cereales</nombre>
+		<precio>3.45</precio>
+	</producto>
+	<producto>
+		<nombre>Colacao</nombre>
+		<precio>1.45</precio>
+	</producto>
+	<producto>
+		<nombre>Agua mineral</nombre>
+		<precio>1.00</precio>
+	</producto>
+</productos>
