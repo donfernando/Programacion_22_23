@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF8" standalone="yes"?>
+<novedades>
+   <fecha>2004-01-01</fecha>
+   <disco genero="pop" cod="1111">
+      <titulo>O sea</titulo>
+      <interprete>Enrique Iglesias</interprete>
+      <direccion>http://www.enriqueiglesias.com</direccion>
+   </disco>
+   <libro cod="2222">
+      <titulo>Programación de aplicaciones web</titulo>
+      <autor>John McCarra</autor>
+      <autor>Frank Webini</autor>
+      <direccion>http://www.paw.org</direccion>
+   </libro>
+   <libro cod="3477">
+      <titulo>Manolito Gafotas</titulo>
+      <autor>Elvira Lindo</autor>
+      <direccion>http://www.manolitogafotas.com</direccion>
+   </libro>
+</novedades>

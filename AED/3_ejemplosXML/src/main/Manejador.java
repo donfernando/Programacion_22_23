@@ -17,12 +17,12 @@ public class Manejador extends DefaultHandler {
 	   prefijo += "  ";
   }
 
-   @Override
-   public void characters(char[] ch, int start, int length) throws SAXException {
-	   String s=new String(ch,start,length).trim();
-	   if(s.length()!=0)
-		   System.out.println(prefijo+s);
-   }
+//   @Override
+//   public void characters(char[] ch, int start, int length) throws SAXException {
+//	   String s=new String(ch,start,length).trim();
+//	   if(s.length()!=0)
+//		   System.out.println(prefijo+s);
+//   }
 
    @Override
    public void endElement(String uri, String localName, String qName) throws SAXException {

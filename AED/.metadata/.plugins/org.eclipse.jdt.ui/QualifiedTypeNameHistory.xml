@@ -16,4 +16,6 @@
     <fullyQualifiedTypeName name="java.net.URI"/>
     <fullyQualifiedTypeName name="org.xml.sax.helpers.DefaultHandler"/>
     <fullyQualifiedTypeName name="main.ManejadorKarim"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="main.ManejadorHTML"/>
 </qualifiedTypeNameHistroy>
