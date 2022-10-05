@@ -1,4 +1,4 @@
-package main;
+package ejemplos.sax;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
