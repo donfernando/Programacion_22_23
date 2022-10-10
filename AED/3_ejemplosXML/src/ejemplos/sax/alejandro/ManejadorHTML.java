@@ -22,16 +22,12 @@ public class ManejadorHTML extends DefaultHandler {
 			+ "<th>Autores</th>\r\n" + "</tr>\r\n";
 	final String HTML_AFTER = "</body>\r\n" + "</html>";
 
-	@Override
-	public void startDocument() throws SAXException {
-	}
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		if (qName.equals("titulo") && enLibro) {
 			enTitulo = true;
-		}
-		if (qName.equals("autor") && enLibro) {
+		} else if (qName.equals("autor") && enLibro) {
 			enAutor = true;
 		} else if (qName.equals("libro")) {
 			enLibro = true;
@@ -53,8 +49,7 @@ public class ManejadorHTML extends DefaultHandler {
 		if (qName.equals("titulo") & enTitulo) {
 			enTitulo = false;
 			libros.get(libros.size() - 1).titulo = titulo;
-		}
-		if (qName.equals("autor") & enAutor) {
+		} else if (qName.equals("autor") & enAutor) {
 			enAutor = false;
 			libros.get(libros.size() - 1).autores.add(autor);
 		} else if (qName.equals("libro")) {
@@ -64,10 +59,6 @@ public class ManejadorHTML extends DefaultHandler {
 
 	@Override
 	public void endDocument() throws SAXException {
-		writeHTML();
-	}
-
-	private void writeHTML() {
 		try {
 			FileWriter writter = new FileWriter(HTML_FILE);
 			writter.write(HTML_BEFORE);

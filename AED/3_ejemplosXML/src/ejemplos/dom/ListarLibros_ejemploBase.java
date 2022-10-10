@@ -25,20 +25,19 @@ import org.w3c.dom.Text;
 import org.w3c.dom.UserDataHandler;
 import org.xml.sax.SAXException;
 
-public class ListarLibros {
+public class ListarLibros_ejemploBase {
 	public static void main(String[] args)
 			throws TransformerException, ParserConfigurationException, SAXException, IOException {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(true);
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		Document doc = builder.parse(ListarLibros.class.getResourceAsStream("/recursos/librosFormatoBase.html"));
+		Document doc = builder.parse(ListarLibros_ejemploBase.class.getResourceAsStream("/recursos/librosFormatoBase.html"));
 		FileWriter out; 
 		
 		Element html = doc.getDocumentElement();
 		
 		NodeList nodos = html.getElementsByTagName("table");
 		Element tabla = (Element) nodos.item(0);
-		
 		Element filaLibro = doc.createElement("tr");
 		Element celdaTitulo = doc.createElement("td"); 
 		Element celdaAutores = doc.createElement("td");

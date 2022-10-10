@@ -7,9 +7,9 @@
       <direccion>http://www.enriqueiglesias.com</direccion>
    </disco>
    <libro cod="2222">
+      <autor>Frank Webini</autor>
       <titulo>Programación de aplicaciones web</titulo>
       <autor>John McCarra</autor>
-      <autor>Frank Webini</autor>
       <direccion>http://www.paw.org</direccion>
    </libro>
    <libro cod="3477">
