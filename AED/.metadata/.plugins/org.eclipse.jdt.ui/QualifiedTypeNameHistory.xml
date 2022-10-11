@@ -29,7 +29,6 @@
     <fullyQualifiedTypeName name="javax.xml.transform.Result"/>
     <fullyQualifiedTypeName name="javax.xml.transform.dom.DOMSource"/>
     <fullyQualifiedTypeName name="javax.xml.transform.stream.StreamResult"/>
-    <fullyQualifiedTypeName name="ejemplos.dom.ListarLibros"/>
     <fullyQualifiedTypeName name="javax.xml.transform.Transformer"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -38,4 +37,11 @@
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
     <fullyQualifiedTypeName name="org.w3c.dom.NodeList"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.ParserConfigurationException"/>
+    <fullyQualifiedTypeName name="java.util.logging.XMLFormatter"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="java.util.logging.FileHandler"/>
+    <fullyQualifiedTypeName name="java.util.logging.SimpleFormatter"/>
+    <fullyQualifiedTypeName name="ejemplos.dom.ListarLibros"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
 </qualifiedTypeNameHistroy>

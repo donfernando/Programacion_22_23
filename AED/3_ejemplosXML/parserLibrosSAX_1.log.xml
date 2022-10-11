@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-11T12:49:52.065034136Z</date>
+  <millis>1665492592065</millis>
+  <nanos>34136</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>ejemplos.dom.ListarLibros</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>El tipo de elemento "libro" debe finalizar por la etiqueta final coincidente "&lt;/libro&gt;".</message>
+</record>
+</log>

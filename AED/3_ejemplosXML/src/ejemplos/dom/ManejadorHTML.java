@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.logging.Level;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -42,18 +43,17 @@ public class ManejadorHTML extends DefaultHandler {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(true);
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		doc = builder.parse(ListarLibros_ejemploBase.class.getResourceAsStream("/recursos/librosFormatoBase.html"));
-		tabla = (Element)doc.getElementsByTagName("table").item(0);
+		try {
+			doc = builder.parse(ListarLibros_ejemploBase.class.getResourceAsStream("/recursos/librosFormatoBase.html"));
+			tabla = (Element)doc.getElementsByTagName("table").item(0);
+		} catch (SAXException | IOException e) {
+			ListarLibros.log.log(Level.SEVERE,"Error grave de enálisis del fichero XML\n"+e.getMessage());
+			throw e;
+		}
 	}
 	
-	
-	@Override
-	public void startDocument() throws SAXException {
-	}
-
 	@Override
 	public void endDocument() throws SAXException {
-
 		try {
 			// Serialización del documento
 			TransformerFactory xformFactory = TransformerFactory.newInstance();
@@ -79,7 +79,11 @@ public class ManejadorHTML extends DefaultHandler {
 		case "libro":
 			dentroDeLibro = true;
 			libro = doc.createElement("tr");
+			titulo = doc.createElement("td");			
 			autores = doc.createElement("td");
+			libro.appendChild(titulo);
+			libro.appendChild(autores);
+			tabla.appendChild(libro);
 			break;
 		case "autor":
 			if (dentroDeLibro)
@@ -97,10 +101,8 @@ public class ManejadorHTML extends DefaultHandler {
 		String datos;
 		datos = new String(ch, start, length).trim();
 		if (datos.length() != 0)
-			if (dentroDeTitulo) {
-				titulo = doc.createElement("td");
+			if (dentroDeTitulo) {				
 				titulo.appendChild(doc.createTextNode(datos));
-				libro.appendChild(titulo);
 			} else if (dentroDeAutor) {
 				autor = doc.createElement("p");
 				autor.appendChild(doc.createTextNode(datos));
@@ -115,8 +117,6 @@ public class ManejadorHTML extends DefaultHandler {
 		switch (qName) {
 		case "libro":
 			dentroDeLibro = false;
-			libro.appendChild(autores);
-			tabla.appendChild(libro);
 			break;
 		case "autor":
 			dentroDeAutor = false;
