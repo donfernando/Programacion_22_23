@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-13T12:35:21.236515503Z</date>
+  <millis>1665664521236</millis>
+  <nanos>515503</nanos>
+  <sequence>0</sequence>
+  <logger>prueba.EdurekaLogger</logger>
+  <level>INFO</level>
+  <class>prueba.EdurekaLogger</class>
+  <method>sampleLog</method>
+  <thread>1</thread>
+  <message>Welcome to Edureka!</message>
+</record>
+<record>
+  <date>2022-10-13T12:35:21.317608206Z</date>
+  <millis>1665664521317</millis>
+  <nanos>608206</nanos>
+  <sequence>2</sequence>
+  <logger>prueba.EdurekaLogger</logger>
+  <level>INFO</level>
+  <class>prueba.Customer</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>ADIOS</message>
+</record>
+</log>

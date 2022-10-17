@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
+<record>
+  <date>2022-10-13T12:56:15.458092540Z</date>
+  <millis>1665665775458</millis>
+  <nanos>92540</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>ejemplos.dom.ListarLibros</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>El tipo de elemento "ini" debe ir seguido de una de estas especificaciones de atributo: "&gt;" o "/&gt;".</message>
+</record>
 </log>

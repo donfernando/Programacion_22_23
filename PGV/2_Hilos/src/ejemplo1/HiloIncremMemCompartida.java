@@ -2,7 +2,7 @@ package ejemplo1;
 
 public class HiloIncremMemCompartida extends Thread {
 
-	private static int x = 0;
+	private static Integer x = 0;
 	private final static int VECES = 30;
 
 	private String nombre;
@@ -20,6 +20,7 @@ public class HiloIncremMemCompartida extends Thread {
 		for (int i = 0; i < VECES; i++) {
 			System.out.println(nombre + ": " + (x += incremento));
 		}
+		
 	}
 
 	public static void main(String[] args) throws InterruptedException {

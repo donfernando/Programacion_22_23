@@ -1,40 +1,58 @@
 package conexion.pruebas;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 
 public class Main {
-	protected Connection conexion = null;
-	private final String url = "jdbc:mysql://localhost/gestion_educativa";
-	private final String usuario = "root";
-	private final String password = "donfer";
+	protected Connection conectar;
+	private String url;
+	private String usuario;
+	private String password;
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Hola");
-		new Main().abrirConexion();
-
+		
+		try {
+			new Main().abrirConexion();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
-	public void abrirConexion(){
+	
+	public void abrirConexion() throws IOException{
 	    try{
-//DEPRECATED	        Class.forName("com.mysql.jdbc.Driver"); 
-	        Class.forName("com.mysql.cj.jdbc.Driver"); // De esta forma cargamos la clase Driver de MySQL.
-	        conexion = DriverManager.getConnection(url, usuario, password);
+	    	Properties conexion = new Properties();
+	    	conexion.load(getClass().getResourceAsStream("/resources/conexionDB.properties"));
+	    	url = conexion.getProperty("url");
+	    	usuario = conexion.getProperty("usuario");
+	    	password = conexion.getProperty("password");
+	    	
+//	        Class.forName("com.mysql.jdbc.Driver"); // De esta forma cargamos la clase Driver de MySQL.
+//	        Class.forName("com.mysql.cj.jdbc.Driver"); 
+	    	Class.forName(conexion.getProperty("driver"));
+	    	
+	        conectar = DriverManager.getConnection(url, usuario, password);
+	        
 	        System.out.println("Conexión Exitosa");
 	        
-	        Statement s = conexion.createStatement();
-	        ResultSet rs = s.executeQuery("SELECT * FROM alumnos");
+	        Statement s = conectar.createStatement();
+	        ResultSet rs = s.executeQuery("SELECT * FROM Habitaciones");
 	        while (rs.next()) 
-	            System.out.printf("*-> %s, %s\n",rs.getString(1),rs.getString(2));	        
+	            System.out.printf("-> %s, %s\n",rs.getString(1),rs.getString(2));	        
+	        
+	        	        
 	        
 	        
-	        
-	        
-	    }catch(SQLException | ClassNotFoundException ex){
+	    }catch(SQLException ex){
 	        System.out.println("Error al abrir Conexión: " + ex.getMessage());
-	    }
+	    }catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 }

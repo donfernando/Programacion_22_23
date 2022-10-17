@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0074)https://users.dcc.uchile.cl/~lmateu/CC60H/Trabajos/fpicero/Propiedades.htm -->
+<html><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Propiedades ligadas</title>
+
+<meta content="MSHTML 5.50.4134.600" name="GENERATOR"></head>
+<body>
+<h1 align="center">Propiedades ligadas</h1>
+
+
+<p>Cuando a un empleado (objeto de la clase <em>Asalariado</em>) le aumentan el 
+sueldo, ha de notificar este hecho a otros: la familia, la Hacienda pï¿œblica, 
+etc. Vamos a estudiar con detalle los pasos necesarios para crear una clase 
+<em>Asalariado</em> con una propiedad ligada (el sueldo) y otra clase 
+<em>Hacienda</em> cuyos objetos (funcionarios) estï¿œn interesados en el cambio en 
+el valor de dicha propiedad.</p>
+<p>Este ejemplo, nos permitirï¿œ profundizar aï¿œn mï¿œs en el mecanismo que emplea 
+Java 1.1 para responder 
+a las acciones del usuario sobre los distintos controles y grupos de 
+controles.</p>
+<p>&nbsp;</p>
+<h2>Una clase con una propiedad ligada </h2>
+<p>Creamos una clase denominada <em>Asalariado</em> con una propiedad ligada 
+(bound) denominada <em>sueldo</em> de tipo <strong>int</strong>.</p><pre>public class Asalariado{
+  private int sueldo;
+  
+  public Asalariado() {
+    sueldo=20;
+  }
+  public void setSueldo(int nuevoSueldo){
+    sueldo=nuevoSueldo;
+  }
+  public int getSalario(){
+    return sueldo;
+  }
+//...
+}</pre>
+<p>La clase <em>Asalariado</em> tiene un constructor por defecto, que asigna un 
+valor inicial de 20 al miembro dato <em>sueldo</em>. Sueldo es una propiedad
+ya que tiene asociados dos mï¿œtodos que empiezan por <strong>set</strong> y 
+<strong>get</strong>.</p>
+<p>Para notificar un cambio en dicha propiedad necesitamos llevar a cabo las 
+siguientes tareas: 
+</p><ol>
+  <li>Crear una clase que defina un suceso (event) personalizado, denominada 
+  <em>XXXEvent</em> </li></ol>
+<ol start="2">
+  <li>Crear un interface denominado <em>XXXListener</em>, que declare los 
+  mï¿œtodos que los objetos (listeners) a los que se le notifican el cambio en 
+  dicha propiedad, precisen implementar. </li></ol>
+<ol start="3">
+  <li>Crear un array (vector) que contenga la lista de objetos (listeners) 
+  interesados en el cambio en el valor de dicha propiedad. </li></ol>
+<ol start="4">
+  <li>Definir dos funciones denominadas <em>addXXXListener</em> y 
+  <em>removeXXXListener</em>, que aï¿œadan o eliminen objetos de dicha lista. 
+</li></ol>
+<p>Vamos a estudiar detalladamente cada uno de los pasos:</p>
+<p>&nbsp;</p>
+<h2>La clase que define un 
+suceso</h2>
+<p>Un suceso (event) es un objeto que indica que algo ha sucedido. Puede ser que 
+el usuario haya movido el ratï¿œn, que un paquete de datos haya llegado a travï¿œs 
+de la red, etc. Cuando algo sucede, se ha de realizar alguna acciï¿œn, por 
+ejemplo, dibujar en la superficie del applet cuando se mueve el ratï¿œn, imprimir 
+en la pantalla la informaciï¿œn que ha llegado, etc.</p>
+<p>La clase que define nuestro suceso (event) personalizado, que denominamos 
+<em>SalarioEvent</em>, deriva 
+de <em>EventObject</em>. Dicha clase tiene dos miembros dato, el sueldo que 
+cobraba antes <em>anteSueldo</em>, y el sueldo que cobra ahora, 
+<em>nuevoSueldo</em>. La clase base <em>EventObject</em> precisa conocer la 
+fuente de los sucesos, que se le pasa en el primer parï¿œmetro del constructor 
+luego, inicializa los dos miembros dato, que se pueden declarar 
+<strong>private</strong> o <strong>protected</strong>, segï¿œn convenga. </p>
+<p>La clase define dos funciones miembro, <em>getNuevoSueldo</em> y 
+<em>getAnteSueldo</em>, que permiten conocer los valores que guardan los dos 
+miembros dato.</p>
+<table cellspacing="0" width="100%" border="1">
+  <tbody>
+  <tr>
+    <td width="100%" bgcolor="#f7f7f7"><pre>import java.util.*;
+
+public class SalarioEvent extends EventObject {
+  protected int anteSueldo, nuevoSueldo;
+  public SalarioEvent(Object fuente, int anterior, int nuevo) {
+    super(fuente);
+    nuevoSueldo=nuevo;
+    anteSueldo=anterior;
+  }
+  public int getNuevoSueldo(){ return nuevoSueldo;}
+  public int getAnteSueldo(){ return anteSueldo;}
+}</pre></td></tr></tbody></table>
+<p>&nbsp;</p>
+<h2>El interface XXXListener</h2>
+<p>Un interface
+es un grupo de mï¿œtodos que implementan varias clases independientemente de su 
+relaciï¿œn jerï¿œrquica, es decir, de que estï¿œn o no en una jerarquï¿œa.</p>
+<p>La clase cuyos objetos (listeners) estï¿œn interesados en el cambio en el valor 
+de la propiedad ligada, ha de implementar un interface que se ha denominado 
+<em>SalarioListener</em>. Dicho interface declara una ï¿œnica funciï¿œn 
+<em>enteradoCambioSueldo</em> que ha de ser definida por la clase que implemente 
+el interface.</p>
+<table cellspacing="0" width="100%" border="1">
+  <tbody>
+  <tr>
+    <td width="100%" bgcolor="#f7f7f7"><pre>import java.util.*;
+
+public interface SalarioListener extends EventListener {
+  public void enteradoCambioSueldo(EventObject e);
+}</pre></td></tr></tbody></table>
+<p>&nbsp;</p>
+<h2>La fuente de los sucesos 
+(events)</h2>
+<p>Un objeto que estï¿œ interesado en recibir sucesos (events) se denomina 
+<em>event listener</em>. Un objeto que que produce los sucesos se llama 
+<em>event source</em>, el cual mantiene una lista <em>salarioListeners</em> 
+(objeto de la 
+clase <em>Vector</em>) de objetos que estï¿œn interesados en recibir sucesos y 
+proporciona dos mï¿œtodos para aï¿œadir <em>addSalarioListener</em> o eliminar 
+<em>removeSalarioListener</em> dichos objetos de la lista.</p><pre>public class Asalariado{
+  private Vector salarioListeners=new Vector();
+
+  public synchronized void addSalarioListener(SalarioListener listener){
+        salarioListeners.addElement(listener);
+  }
+
+  public synchronized void removeSalarioListener(SalarioListener listener){
+        salarioListeners.removeElement(listener);
+  }
+//...
+}</pre>
+<p>Cada vez que se produce un cambio en el valor de la propiedad Sueldo, se ha 
+de notificar dicho cambio a los objetos interesados que se guardan en el vector 
+<em>salarioListeners. </em></p>
+<p>La funciï¿œn miembro o mï¿œtodo que cambia la propiedad se denomina 
+<em>setSueldo</em>. La tarea de dicha funciï¿œn como hemos visto anteriormente es 
+la de actualizar el miembro dato <em>sueldo</em>, pero tambiï¿œn tiene otras 
+tareas como son las de crear un objeto de la clase <em>SalarioEvent</em> y 
+notificar a los objetos interesados (listeners) de dicho cambio llamando a la 
+funciï¿œn miembro <em>notificarCambio </em>y pasï¿œndole en su ï¿œnico argumento el 
+objeto <em>event</em> creado.</p>
+<p>Para crear un objeto <em>event</em> de la clase <em>SalarioEvent</em>, se 
+precisa pasar al constructor tres datos: el objeto fuente de los sucesos, 
+<strong>this</strong>, el sueldo que cobraba antes, <em>anteSueldo</em> y el 
+sueldo que cobra ahora, <em>nuevoSueldo</em>.</p><pre>  public void setSueldo(int nuevoSueldo){
+    int anteSueldo=sueldo;
+    sueldo=nuevoSueldo;
+    if(anteSueldo!=nuevoSueldo){
+        SalarioEvent event=new SalarioEvent(this, anteSueldo, nuevoSueldo);
+        notificarCambio(event);
+    }    
+  }</pre>
+<p>Se define la funciï¿œn <em>notificarCambio</em>, para notificar el cambio en la 
+propiedad Sueldo a los objetos (listeners) que estï¿œn interesados en cambio de 
+dicha propiedad y que se guardan en el vector <em>salarioListeners</em>,. En 
+dicha funciï¿œn, se crea una copia
+del vector <em>salarioListeners</em> y se guarda en la variable local 
+<em>lista</em> de la clase <em>Vector</em>. La palabra clave <strong>synchronized</strong> 
+evita que varios&nbsp; procesos ligeros o threads puedan acceder simultï¿œneamente 
+a la misma lista mientras se efectï¿œa el proceso de copia.</p><pre>    Vector lista;
+    synchronized(this){
+        lista=(Vector)salarioListeners.clone();
+    }</pre>
+<p>Finalmente, todos los objetos (listeners) interesados y que se guardan en el 
+objeto <em>lista</em>, llaman a la funciï¿œn miembro 
+<em>enteradoCambioSueldo</em>, ya que la clase que describe a dichos objetos, 
+como veremos mï¿œs adelante, implementa el interface <em>SalarioListener</em>. En 
+el estudio de la 
+clase <em>Vector</em> vimos como se accedï¿œa a cada uno de sus elementos.</p><pre>    for(int i=0; i&lt;lista.size(); i++){
+        SalarioListener listener=(SalarioListener)lista.elementAt(i);
+        listener.enteradoCambioSueldo(event);
+    }</pre>
+<p>El cï¿œdigo completo de la clase <em>Asalariado</em> es el siguiente</p>
+<table cellspacing="0" width="100%" border="1">
+  <tbody>
+  <tr>
+    <td width="100%" bgcolor="#f7f7f7"><pre>import java.beans.*;
+import java.util.*;
+
+public class Asalariado{
+  private Vector salarioListeners=new Vector();
+  private int sueldo;
+
+  public Asalariado() {
+    sueldo=20;
+  }
+
+  public void setSueldo(int nuevoSueldo){
+    int anteSueldo=sueldo;
+    sueldo=nuevoSueldo;
+    if(anteSueldo!=nuevoSueldo){
+        SalarioEvent event=new SalarioEvent(this, anteSueldo, nuevoSueldo);
+        notificarCambio(event);
+    }
+  }
+  public int getSalario(){
+    return sueldo;
+  }
+
+  public synchronized void addSalarioListener(SalarioListener listener){
+        salarioListeners.addElement(listener);
+  }
+  public synchronized void removeSalarioListener(SalarioListener listener){
+        salarioListeners.removeElement(listener);
+  }
+
+  private void notificarCambio(SalarioEvent event){
+    Vector lista;
+    synchronized(this){
+        lista=(Vector)salarioListeners.clone();
+    }
+    for(int i=0; i&lt;lista.size(); i++){
+        SalarioListener listener=(SalarioListener)lista.elementAt(i);
+        listener.enteradoCambioSueldo(event);
+    }
+  }
+}</pre></td></tr></tbody></table>
+<p>&nbsp;</p>
+<h2>Los objetos (listeners) 
+interesados</h2>
+<p>La clase <em>Hacienda</em> que describe los objetos que estï¿œn interesados en 
+el cambio en el valor de la propiedad Sueldo, han de implementar el interface 
+<em>SalarioListener</em> y definir la funciï¿œn <em>enteradoCambioSueldo</em>. 
+Definimos una clase denominada <em>Hacienda</em> cuyos objetos (los funcionarios 
+inspectores de hacienda) estï¿œn interesados en el cambio de sueldo de los 
+empleados.</p>
+<table cellspacing="0" width="100%" border="1">
+  <tbody>
+  <tr>
+    <td width="100%" bgcolor="#f7f7f7"><pre>public class Hacienda implements SalarioListener{
+
+  public Hacienda() {
+  }
+  public void enteradoCambioSueldo(EventObject ev){
+    if(ev instanceof SalarioEvent){
+        SalarioEvent event=(SalarioEvent)ev;
+        System.out.println("Hacienda: nuevo sueldo    "+event.getNuevoSueldo());
+        System.out.println("Hacienda: sueldo anterior "+event.getAnteSueldo());
+    }
+  }
+}</pre></td></tr></tbody></table>
+<p>Como la funciï¿œn <em>enteradoCambioSueldo</em> recibe un objeto<em> ev</em> de 
+la clase <em>SalarioEvent</em>, podemos extraer mediante las funciones miembro 
+que se definen en dicha clase toda la informaciï¿œn relativa al suceso: el sueldo 
+que cobraba antes el empleado y el sueldo que cobra ahora. Esta informaciï¿œn la 
+obtenemos llamando a las funciones miembro <em>getNuevoSueldo</em> y 
+<em>getAnteSueldo</em>. Con esta informaciï¿œn el funcionario de Hacienda puede 
+calcular las nuevas retenciones, impuestos, etc. En este caso, se limita, 
+afortunadamente, a mostrar en la pantalla el sueldo anterior y el nuevo sueldo. 
+</p>
+<p>&nbsp;</p>
+<h2>Vinculaciï¿œn 
+entre la fuente de sucesos y los objetos (listeners) interesados</h2>
+<p>Para probar las clases <em>Asalariado</em> y <em>Hacienda</em> y comprobar 
+como un objeto de la primera clase notifica el cambio en el valor de una de sus 
+propiedades a un objeto de la segunda clase, creamos una aplicaciï¿œn.</p>
+<p>En dicha aplicaciï¿œn, se crean dos objetos uno de cada una de las clases, 
+llamando a su constructor por defecto o explï¿œcito segï¿œn se requiera.</p><pre>    Hacienda funcionario1=new Hacienda();
+    Asalariado empleado=new Asalariado();</pre>
+<p>La vinculaciï¿œn entre el objeto fuente, <em>empleado</em>, y el objeto 
+interesado en conocer el cambio en el valor de una de sus propiedades, 
+<em>funcionario1</em> se realiza mediante la siguiente sentencia.</p><pre>    empleado.addSalarioListener(funcionario1); </pre>
+<p>El objeto <em>funcionario1</em> se aï¿œade a la lista (vector) de objetos 
+interesados en conocer el nuevo sueldo del empleado. Podemos poner mï¿œs 
+sentencias similares, para que mï¿œs funcionarios de Hacienda sean notificados de 
+dicho cambio. Tambiï¿œn podemos crear otra clase que se llame por ejemplo 
+<em>Familia</em>, que implemente el interface <em>SalarioListener</em> y defina 
+la funciï¿œn <em>enteradoCambioSueldo</em>. Creamos objetos de esta clase, la 
+mujer, los hijos, etc, y los aï¿œadimos mediante <em>addSalarioListener</em> a la 
+lista de personas (listeners) interesados en conocer la noticia.</p>
+<p>Cuando escribimos la sentencia</p><pre>    empleado.setSueldo(50);</pre>
+<ol>
+  <li>El objeto <em>empleado</em> llama a la funciï¿œn&nbsp; <em>setSueldo</em> 
+  que cambia la propiedad. </li></ol>
+<ol start="2">
+  <li>En el cuerpo de <em>setSueldo</em>, se comprueba que hay un cambio en el 
+  valor del miembro dato <em>sueldo</em>. </li></ol>
+<ol start="3">
+  <li>Se llama a la funciï¿œn miembro <em>notificarCambio</em> para dar a conocer 
+  a los objetos interesados que se guardan en el vector 
+  <em>salarioListeners</em> el cambio en el valor de dicha propiedad. </li></ol>
+<ol start="4">
+  <li>En el cuerpo de <em>notificarCambio</em>, los objetos (listeners) 
+  interesados llaman a la funciï¿œn <em>enteradoCambioSueldo</em>. </li></ol>
+<ol start="5">
+  <li>Los objetos interesados que pueden ser de la misma clase o de distinta 
+  clase, siempre que implementen el inteface <em>SalarioListener</em>, realizan 
+  en el cuerpo de la funciï¿œn <em>enteradoCambioSueldo</em> las tareas, no 
+  siempre oportunas, con la informaciï¿œn que se le proporciona a travï¿œs del 
+  objeto <em>ev</em> de la clase <em>SalarioEvent</em>. </li></ol>
+<p>El cï¿œdigo completo de la aplicaciï¿œn es el siguiente:</p>
+<table cellspacing="0" width="100%" border="1">
+  <tbody>
+  <tr>
+    <td width="100%" bgcolor="#f7f7f7"><pre>public class EjemploApp {
+
+  public static void main(String[] args) {
+    Hacienda funcionario1=new Hacienda();
+    Asalariado empleado=new Asalariado();
+    System.out.println("----------------------------");
+    empleado.addSalarioListener(funcionario1);
+    empleado.setSueldo(50);
+}</pre></td></tr></tbody></table>
+<p>&nbsp;</p>
+<h2>El cï¿œdigo fuente</h2>
+<p><img height="32" alt="disco.gif (1035 bytes)" src="./Propiedades ligadas_files/disco.gif" width="32" align="middle"><a href="https://users.dcc.uchile.cl/~lmateu/CC60H/Trabajos/fpicero/archivos/Asalariado.java">Asalariado.java</a>, 
+<a href="https://users.dcc.uchile.cl/~lmateu/CC60H/Trabajos/fpicero/archivos/SalarioEvent.java">SalarioEvent.java</a>, 
+<a href="https://users.dcc.uchile.cl/~lmateu/CC60H/Trabajos/fpicero/archivos/SalarioListener.java">SalarioListener.java</a>, 
+<a href="https://users.dcc.uchile.cl/~lmateu/CC60H/Trabajos/fpicero/archivos/Hacienda.java">Hacienda.java</a>, 
+<a href="https://users.dcc.uchile.cl/EjemploApp.java">EjemploApp.java</a></p>
+<table align="right">
+  <tbody><tr>
+    <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="50" height="37">
+        <param name="BASE" value=".">
+        <param name="movie" value="button3.swf">
+        <param name="quality" value="high">
+        <param name="BGCOLOR" value="#FF0000">
+        <embed src="button3.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="50" height="37" bgcolor="#FF0000" base=".">
+         
+      </object></td>
+	      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="50" height="37">
+        <param name="movie" value="button13.swf">
+        <param name="quality" value="high">
+        <param name="BASE" value=".">
+        <param name="BGCOLOR" value="#FF0000">
+        <embed src="button13.swf" base="." quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="50" height="37" bgcolor="#FF0000">
+         
+      </object></td> 
+    <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="50" height="37">
+        <param name="BASE" value=".">
+        <param name="movie" value="button4.swf">
+        <param name="quality" value="high">
+        <param name="BGCOLOR" value="#FF0000">
+        <embed src="button4.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="50" height="37" bgcolor="#FF0000" base=".">
+         
+      </object></td>
+	
+</tr></tbody></table>
+</body></html>

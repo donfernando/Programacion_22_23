@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Habitaciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="file://./habitaciones.xsd">
+	<script />
+	<Habitacion numHabitacion="301" preciodia="84">
+		<codHotel>H10</codHotel>
+		<Estancias>
+			<Cliente fechaInicio="2018-01-01" fechaFin="2019-01-01">Juan Perez
+			</Cliente>
+			<Cliente fechaInicio="2017-01-01" fechaFin="2017-06-01">Pedro Lopez Mendez
+			</Cliente>
+			<Cliente fechaInicio="2016-03-01" fechaFin="2016-05-08">Maria Rodriguez
+				Marquez</Cliente>
+		</Estancias>
+	</Habitacion>
+	<Habitacion numHabitacion="302" preciodia="76">
+		<codHotel>Riu1</codHotel>
+		<Estancias>
+			<Cliente fechaInicio="2018-02-01" fechaFin="2019-06-01">Victor Gonzalez
+				Ramos</Cliente>
+			<Cliente fechaInicio="2016-01-01" fechaFin="2016-06-01">Mario Arteaga
+				Mendez</Cliente>
+		</Estancias>
+	</Habitacion>
+	<Habitacion numHabitacion="501" preciodia="50">
+		<codHotel>Sol3</codHotel>
+		<Estancias>
+			<Cliente fechaInicio="2017-05-01" fechaFin="2018-09-01">Raquel Mateo
+				Umpierrez</Cliente>
+			<Cliente fechaInicio="2017-01-01" fechaFin="2017-04-01">Teresa Gutierrez
+				Estevez</Cliente>
+			<Cliente fechaInicio="2017-06-01" fechaFin="2018-08-08">Roberto Fajardo
+				Lopez</Cliente>
+			<Cliente fechaInicio="2016-03-01" fechaFin="2016-03-08">Raquel Mateo
+				Umpierrez</Cliente>
+		</Estancias>
+	</Habitacion>
+	<Habitacion numHabitacion="401" preciodia="120">
+		<codHotel>Luna4</codHotel>
+		<Estancias>
+			<Cliente fechaInicio="2017-05-01" fechaFin="2018-09-01">Maria Rodriguez Marquez</Cliente>
+			<Cliente fechaInicio="2017-01-01" fechaFin="2017-04-01">Luis Martinez Estevez</Cliente>
+			<Cliente fechaInicio="2017-06-01" fechaFin="2017-08-08">Carlos Perez Lopez
+			</Cliente>
+			<Cliente fechaInicio="2016-03-01" fechaFin="2016-03-08">Jose Maria Martinez Bacallado</Cliente>
+		</Estancias>
+	</Habitacion>
+</Habitaciones>

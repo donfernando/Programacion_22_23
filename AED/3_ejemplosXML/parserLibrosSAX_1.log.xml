@@ -2,15 +2,15 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-10-11T12:49:52.065034136Z</date>
-  <millis>1665492592065</millis>
-  <nanos>34136</nanos>
+  <date>2022-10-13T12:49:34.948488262Z</date>
+  <millis>1665665374948</millis>
+  <nanos>488262</nanos>
   <sequence>0</sequence>
   <logger>global</logger>
-  <level>WARNING</level>
+  <level>INFO</level>
   <class>ejemplos.dom.ListarLibros</class>
   <method>main</method>
   <thread>1</thread>
-  <message>El tipo de elemento "libro" debe finalizar por la etiqueta final coincidente "&lt;/libro&gt;".</message>
+  <message>Finalizado el parser...</message>
 </record>
 </log>

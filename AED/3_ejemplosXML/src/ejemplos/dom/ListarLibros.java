@@ -15,15 +15,18 @@ import javax.xml.parsers.SAXParserFactory;
 import org.xml.sax.SAXException;
 
 public class ListarLibros {
-	public static Logger log = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	static Logger log = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 	static {
 		try {
 			FileHandler fh = new FileHandler("parserLibrosSAX_%g.log", 10485760, 2, false);
 			FileHandler fhXML = new FileHandler("parserLibrosSAX_%g.log.xml", 10485760, 2, false);
 			fh.setFormatter(new SimpleFormatter());
+//			log.getHandlers()[0].setFormatter(new XMLFormatter());
 			log.addHandler(fh);
 			log.addHandler(fhXML);
+			
+			
 		} catch (IOException e) {
 			log.log(Level.SEVERE,"No se pueden crear los manejadores de Log.");
 		}
@@ -35,7 +38,9 @@ public class ListarLibros {
 			SAXParser saxParser = factory.newSAXParser();
 			ManejadorHTML miManejador = new ManejadorHTML();
 			saxParser.parse(ListarLibros.class.getResourceAsStream("/recursos/libros.xml"), miManejador);
-			System.out.println("Finalizado el parser...");
+			
+			log.log(Level.INFO, "Finalizado el parser...");
+			System.out.println("Fin");
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			log.log(Level.WARNING, e.getMessage());
 		}
