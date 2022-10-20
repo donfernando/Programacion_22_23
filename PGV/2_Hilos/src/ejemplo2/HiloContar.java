@@ -6,7 +6,7 @@ public class HiloContar extends Thread {
 	private static int valor = 0;
 	private static Object o = new Object();
 	private static Logger LOG = Logger.getGlobal();
-
+	private static final int LIMITE = 10;
 	public HiloContar(String nombre) {
 		super(nombre);
 	}
@@ -21,7 +21,7 @@ public class HiloContar extends Thread {
 					LOG.info(getName()+" empieza esperando.");
 					o.wait();
 				}
-				while (valor < 10) {
+				while (valor < LIMITE) {
 					System.out.println(getName() + ": " + (++valor));
 //					LOG.info(getName()+" notifica.");					
 					o.notify();
@@ -39,5 +39,6 @@ public class HiloContar extends Thread {
 		new HiloContar("Primero").start();
 		new HiloContar("Hilo-1").start();
 		new HiloContar("Hilo-2").start();
+		new HiloContar("Hilo-3").start();
 	}
 }

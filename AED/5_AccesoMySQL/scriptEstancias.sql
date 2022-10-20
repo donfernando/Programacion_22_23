@@ -9,13 +9,13 @@ DROP TABLE IF EXISTS Habitaciones;
 CREATE TABLE Habitaciones (
     numHabitacion CHARACTER(4),
     codHotel CHARACTER(10),
-    preciodia INTEGER NOT NULL DEFAULT 0 ,
+    preciodia INTEGER NOT NULL,
     CONSTRAINT pk_habitaciones PRIMARY KEY (numHabitacion,codHotel )
 );
 
 CREATE TABLE Estancias (
-	id Int(3) ,
-    nombre VARCHAR(50),
+	id Int(3) AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
 	fechaInicio DATE NOT NULL,
     fechaFin DATE NOT NULL,
     numHabitacion CHARACTER(4) NOT NULL,
@@ -50,5 +50,5 @@ INSERT INTO Estancias VALUES (11, "Luis Martínez Estévez", "2017-01-01", "2017
 INSERT INTO Estancias VALUES (12, "Carlos Pérez López", "2017-06-01", "2017-08-08" ,"401","Luna4");
 INSERT INTO Estancias VALUES (13, "Jose María Martínez Bacallado", "2016-03-01", "2016-03-08","401","Luna4");
 
--- INSERT INTO Estancias (nombre,fechaInicio,fechaFin,numHabitacion,codHotel) VALUES ("Fernando", "2022-09-01", "2022-09-18","401","Luna4");
+--INSERT INTO Estancias (nombre,fechaInicio,fechaFin,numHabitacion,codHotel) VALUES ("Fernando", "2022-09-01", "2022-09-18","401","Luna4");
 

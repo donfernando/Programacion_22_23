@@ -33,7 +33,6 @@ public class Main {
 	    	usuario = conexion.getProperty("usuario");
 	    	password = conexion.getProperty("password");
 	    	
-//	        Class.forName("com.mysql.jdbc.Driver"); // De esta forma cargamos la clase Driver de MySQL.
 //	        Class.forName("com.mysql.cj.jdbc.Driver"); 
 	    	Class.forName(conexion.getProperty("driver"));
 	    	
