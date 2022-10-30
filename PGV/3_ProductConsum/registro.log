@@ -10332,3 +10332,1603 @@ oct 20, 2022 10:55:52 P. M. ejemplo3.Caja setDato
 INFORMACIÓN: main escribiendo 99
 oct 20, 2022 10:55:52 P. M. ejemplo3.Caja getDato
 INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T09:30:07.816091257Z</date>
+  <millis>1666344607816</millis>
+  <nanos>91257</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 1</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.911617735Z</date>
+  <millis>1666344607911</millis>
+  <nanos>617735</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 1</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.912853818Z</date>
+  <millis>1666344607912</millis>
+  <nanos>853818</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 2</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.914582334Z</date>
+  <millis>1666344607914</millis>
+  <nanos>582334</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 2</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.916785581Z</date>
+  <millis>1666344607916</millis>
+  <nanos>785581</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 3</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.918223383Z</date>
+  <millis>1666344607918</millis>
+  <nanos>223383</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 3</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.919293419Z</date>
+  <millis>1666344607919</millis>
+  <nanos>293419</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 4</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.920542240Z</date>
+  <millis>1666344607920</millis>
+  <nanos>542240</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 4</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.921511254Z</date>
+  <millis>1666344607921</millis>
+  <nanos>511254</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 5</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.922466399Z</date>
+  <millis>1666344607922</millis>
+  <nanos>466399</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 5</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.923233104Z</date>
+  <millis>1666344607923</millis>
+  <nanos>233104</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 6</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.923920944Z</date>
+  <millis>1666344607923</millis>
+  <nanos>920944</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 6</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.924675948Z</date>
+  <millis>1666344607924</millis>
+  <nanos>675948</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 7</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.925449356Z</date>
+  <millis>1666344607925</millis>
+  <nanos>449356</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 7</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.926380346Z</date>
+  <millis>1666344607926</millis>
+  <nanos>380346</nanos>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 8</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.927239205Z</date>
+  <millis>1666344607927</millis>
+  <nanos>239205</nanos>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 8</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.928300302Z</date>
+  <millis>1666344607928</millis>
+  <nanos>300302</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 9</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.929027834Z</date>
+  <millis>1666344607929</millis>
+  <nanos>27834</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 9</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.929983644Z</date>
+  <millis>1666344607929</millis>
+  <nanos>983644</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 10</message>
+</record>
+<record>
+  <date>2022-10-21T09:30:07.930696538Z</date>
+  <millis>1666344607930</millis>
+  <nanos>696538</nanos>
+  <sequence>19</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Consumidor</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>consumo el 10</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T09:30:42.745754136Z</date>
+  <millis>1666344642745</millis>
+  <nanos>754136</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo1.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>produzco el 1</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:01:54.915706338Z</date>
+  <millis>1666346514915</millis>
+  <nanos>706338</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:01:55.023487156Z</date>
+  <millis>1666346515023</millis>
+  <nanos>487156</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:01:55.026432172Z</date>
+  <millis>1666346515026</millis>
+  <nanos>432172</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:02:04.346565172Z</date>
+  <millis>1666346524346</millis>
+  <nanos>565172</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:04.448857747Z</date>
+  <millis>1666346524448</millis>
+  <nanos>857747</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:04.450373235Z</date>
+  <millis>1666346524450</millis>
+  <nanos>373235</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:02:05.286354415Z</date>
+  <millis>1666346525286</millis>
+  <nanos>354415</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:05.392222264Z</date>
+  <millis>1666346525392</millis>
+  <nanos>222264</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:05.395337203Z</date>
+  <millis>1666346525395</millis>
+  <nanos>337203</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:02:06.039877989Z</date>
+  <millis>1666346526039</millis>
+  <nanos>877989</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:06.140227386Z</date>
+  <millis>1666346526140</millis>
+  <nanos>227386</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:06.142258448Z</date>
+  <millis>1666346526142</millis>
+  <nanos>258448</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:02:06.726660828Z</date>
+  <millis>1666346526726</millis>
+  <nanos>660828</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:06.823374948Z</date>
+  <millis>1666346526823</millis>
+  <nanos>374948</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:06.825333637Z</date>
+  <millis>1666346526825</millis>
+  <nanos>333637</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T10:02:07.622502013Z</date>
+  <millis>1666346527622</millis>
+  <nanos>502013</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:07.755902618Z</date>
+  <millis>1666346527755</millis>
+  <nanos>902618</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T10:02:07.758185110Z</date>
+  <millis>1666346527758</millis>
+  <nanos>185110</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-21T11:20:18.640470050Z</date>
+  <millis>1666351218640</millis>
+  <nanos>470050</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Arrancando hilos</message>
+</record>
+<record>
+  <date>2022-10-21T11:20:18.726597800Z</date>
+  <millis>1666351218726</millis>
+  <nanos>597800</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Productor</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Empiezo.</message>
+</record>
+<record>
+  <date>2022-10-21T11:20:18.728733063Z</date>
+  <millis>1666351218728</millis>
+  <nanos>733063</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>ejemplo2.bueno.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Terminados hilos</message>
+</record>
+</log>
+oct 21, 2022 12:34:55 P. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 21, 2022 12:34:55 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:34:55 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:34:55 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:34:55 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:34:55 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:34:55 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:34:55 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 21, 2022 12:37:38 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:37:38 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:37:38 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:37:38 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 2
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 3
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 4
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 5
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:37:38 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 21, 2022 12:38:47 P. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 21, 2022 12:38:47 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:47 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:47 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:47 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:38:47 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 21, 2022 12:38:54 P. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 21, 2022 12:38:54 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:54 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:54 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:54 P. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 21, 2022 12:38:54 P. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:51:48 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:51:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:51:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:51:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:44 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:44 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:44 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:44 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:44 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:44 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:47 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:47 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:47 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:47 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:47 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:47 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:49 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:49 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:49 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:53:50 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:50 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:50 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:50 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:50 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:50 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:54 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:54 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:54 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:54 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:54 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99
+oct 24, 2022 10:53:55 A. M. ejemplo3.Main main
+INFORMACIÓN: Arrancando hilos
+oct 24, 2022 10:53:55 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:55 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:55 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:55 A. M. ejemplo3.Productor run
+INFORMACIÓN: Empiezo.
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod B  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod A  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod D  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: Prod C  ******* escribiendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 1
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 1  oooooooooo leyendo 99
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja setDato
+INFORMACIÓN: main escribiendo 99
+oct 24, 2022 10:53:55 A. M. ejemplo3.Caja getDato
+INFORMACIÓN: Consum 2  oooooooooo leyendo 99

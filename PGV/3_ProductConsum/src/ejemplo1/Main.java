@@ -7,13 +7,12 @@ import java.util.logging.Logger;
 public class Main {
 	
 	static int caja;
-	static int total = 0;
 	static Object o = new Object();
 	
 	static Logger LOG = Logger.getLogger("global");
 	static {
 		try {
-			FileHandler fh = new FileHandler();
+			FileHandler fh = new FileHandler("registro.log",true);
 			LOG.addHandler(fh);
 		} catch (SecurityException | IOException e) {
 			LOG.warning("Error asociando file handle al LOG.\n"+e.getMessage());

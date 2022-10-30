@@ -10,7 +10,7 @@ public class Main {
 	static Logger LOG = Logger.getLogger("global");
 	static {
 		try {
-			FileHandler fh = new FileHandler();
+			FileHandler fh = new FileHandler("registro.log",true);
 			LOG.addHandler(fh);
 		} catch (SecurityException | IOException e) {
 			LOG.warning("Error asociando file handle al LOG.\n"+e.getMessage());

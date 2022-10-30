@@ -6,8 +6,9 @@ public class Caja {
 
 	public synchronized int getDato() throws InterruptedException {
 		int x;
-		while (!hayDato)
+		while (!hayDato) {
 			wait();
+		}
 		x = dato;
 		Main.LOG.info(Thread.currentThread().getName() + " leyendo " + x);
 		// System.out.println(Thread.currentThread().getName() + " leyendo " + x);
@@ -18,8 +19,9 @@ public class Caja {
 	}
 
 	public synchronized void setDato(int dato) throws InterruptedException {
-		while (hayDato)
+		while (hayDato) {
 			wait();
+		}
 		this.dato = dato;
 		Main.LOG.info(Thread.currentThread().getName() + " escribiendo " + dato);
 		// System.out.println(Thread.currentThread().getName() + " escribiendo " +

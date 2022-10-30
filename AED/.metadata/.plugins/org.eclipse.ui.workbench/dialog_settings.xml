@@ -16,9 +16,10 @@
 		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.ui.browser.editorSupport"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.datatools.connectivity.internal.ui.wizards.newconnectionprofile"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.datatools.connectivity"/>
+			<item value="org.eclipse.fx.ide"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
 	</section>

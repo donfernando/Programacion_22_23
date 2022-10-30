@@ -14,6 +14,7 @@ public class Consumidor extends Thread {
 				Main.o.wait(); //Para que espere hasta que se le notifique
 				while(Main.caja != 99) {
 					total += Main.caja;
+					Main.LOG.info("consumo el "+Main.caja);					
 					Main.o.notify();
 					Main.o.wait();
 				}

@@ -14,11 +14,12 @@ public class Productor extends Thread {
 //		int veces = r.nextInt(100) + 1;
 		int veces = 10;
 		try {
-			sleep(2); //Para que el consumidor llegue antes.
+		//	sleep(2); //Para que el consumidor llegue antes.
 			synchronized (Main.o) {
 				for(int i = 0; i < veces; i++) {
 //					Main.caja = r.nextInt(21) - 10;
-					Main.caja = 1;
+					Main.caja = i+1;
+					Main.LOG.info("produzco el "+(i+1));
 					Main.o.notify();
 					Main.o.wait();
 				}
