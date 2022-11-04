@@ -117,6 +117,7 @@ public class Controller implements Initializable {
 		try {
 			if (!(resultado.isBeforeFirst() || resultado.isAfterLast())){
 				resultado.updateString("nombre", nombre.get());
+				resultado.insertRow();
 				resultado.updateRow();
 			}
 			if (resultado.previous()) {
