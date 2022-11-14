@@ -17,7 +17,7 @@ public class EstanciasDB {
 
 	private final Connection conn;
 	private Statement stm;
-	private PreparedStatement stmReservas, stmDelete, stmInsert, stmUpdate;
+	private PreparedStatement stmReservas, stmHabitaciones, stmDelete, stmInsert, stmUpdate;
 
 	public EstanciasDB() throws Exception {
 		Properties conexion = new Properties();
@@ -25,6 +25,8 @@ public class EstanciasDB {
 		Class.forName(conexion.getProperty("driver"));
 		conn = DriverManager.getConnection(conexion.getProperty("url"), conexion.getProperty("user"),
 				conexion.getProperty("password"));
+		stmHabitaciones = conn.prepareStatement(
+				"SELECT DISTINCT numHabitacion FROM Habitaciones WHERE codHotel = ? ORDER BY numHabitacion ");
 		stmReservas = conn.prepareStatement(
 				"SELECT DISTINCT id, nombre, fechaInicio, fechaFin, numHabitacion FROM Estancias WHERE codHotel = ? ORDER BY nombre ");
 		stmDelete = conn.prepareStatement("DELETE FROM Estancias WHERE id = ?");
@@ -51,7 +53,22 @@ public class EstanciasDB {
 		}
 		return items;
 	}
+	public List<String> getHabDeHotel(String hotel) {
+		ResultSet rsHabitaciones;
+		ObservableList<String> habitaciones = FXCollections.observableArrayList();
 
+		try {
+			stmHabitaciones.setString(1, hotel);
+			rsHabitaciones = stmHabitaciones.executeQuery();
+			while (rsHabitaciones.next()) {
+				habitaciones.add(rsHabitaciones.getString("numHabitacion"));
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return habitaciones;
+	}
 	public List<Estancia> getReservasDeHotel(String hotel) {
 		ResultSet rsEstancias;
 //		List<Estancia> estancias = new ArrayList<>();

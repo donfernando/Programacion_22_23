@@ -19,6 +19,7 @@ public class App extends Application {
     	controlador = new ControladorPrincipal();
         scene = new Scene(controlador.getView());
         primaryStage.setScene(scene);
+        primaryStage.resizableProperty().setValue(false);
         primaryStage.show();
     }
     public static void main(String[] args) {

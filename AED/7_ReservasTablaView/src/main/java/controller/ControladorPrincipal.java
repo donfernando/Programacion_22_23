@@ -3,6 +3,7 @@ package controller;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.HashSet;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
 import java.util.logging.Logger;
@@ -114,14 +115,10 @@ public class ControladorPrincipal implements Initializable {
 		datos.estanciaActualProperty().set(-1);
 		datos.estanciasProperty().setAll(estanciasDB.getReservasDeHotel(newValue));
 		String strHabitaciones = "";
-		Set<String> habDeHotalActual = new HashSet<String>();
-		for (Estancia est : datos.estanciasProperty()) {
-			habDeHotalActual.add(est.getNumHabitacion());
-		}
-		datos.listaHabitacionesProperty().clear();
+		List<String> habDeHotalActual = estanciasDB.getHabDeHotel(newValue);
+		datos.listaHabitacionesProperty().setAll(habDeHotalActual);
 		for (String numHab : habDeHotalActual) {
 			strHabitaciones += numHab + "\n";
-			datos.listaHabitacionesProperty().add(numHab);
 		}
 		datos.habitacionesProperty().set(strHabitaciones);
 	}
@@ -136,12 +133,12 @@ public class ControladorPrincipal implements Initializable {
 			paraEliminar = datos.estanciasProperty().get(datos.estanciaActualProperty().get());
 			try {
 				estanciasDB.delete(paraEliminar.getId());
+				datos.estanciasProperty().remove(datos.estanciaActualProperty().get());
+				tblReservas.getSelectionModel().clearSelection();
 			} catch (SQLException e1) {
 				dialogoError("El borrado ha fallado\n" + e1.getMessage());
 			}
 
-			datos.estanciasProperty().remove(datos.estanciaActualProperty().get());
-			tblReservas.getSelectionModel().clearSelection();
 		}
 	}
 
