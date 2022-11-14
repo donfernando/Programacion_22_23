@@ -6,21 +6,29 @@ import java.util.Random;
 public class Mazo {
 	private ArrayList<Carta> mazo = new ArrayList<>();
 	private static Random alea = new Random();
-	public Mazo() {
-		for (int num = 1; num <= 7; num++) {
+	public Mazo(int jugadores) {
+		if(jugadores<3 || jugadores>10)
+			throw new NumJugadoresIlegalException("Los jugadores deben ser entre 3 y 10.");
+		int num = 1;
+		while(jugadores>0 & num<=7) {
 			mazo.add(new Carta(num,Palo.PICA));
 			mazo.add(new Carta(num,Palo.TREBOL));
 			mazo.add(new Carta(num,Palo.DIAMANTE));
 			mazo.add(new Carta(num,Palo.CORAZON));
+			jugadores--;
+			num++;
 		}
-		for (int num = 10; num <= 12; num++) {
+		num=10;
+		while(jugadores>0) {
 			mazo.add(new Carta(num,Palo.PICA));
 			mazo.add(new Carta(num,Palo.TREBOL));
 			mazo.add(new Carta(num,Palo.DIAMANTE));
 			mazo.add(new Carta(num,Palo.CORAZON));
+			jugadores--;
+			num++;
 		}
 	}
-	public void baraja() {
+	public void barajar() {
 		int posAzar;
 		for (int num = 0; num < mazo.size(); num++) {
 			Carta aux = mazo.get(num);

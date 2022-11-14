@@ -17,6 +17,13 @@ public class Carta {
 	public Palo getPalo() {
 		return palo;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return getValor()==((Carta)obj).getValor();
+	}
+	
+	
 	@Override
 	public String toString() {
 		return nombreCarta[valor-1]+" de "+palo;
