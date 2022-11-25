@@ -47,6 +47,7 @@ public class Jugador extends Thread {
 					cSoltar.setDato(miMano.soltarCarta());
 					aLaVez.fase2();
 					miMano.reponerCarta(cCoger.getDato());
+					// TODO Espera opcional.
 					sleep(500);
 				}
 			}

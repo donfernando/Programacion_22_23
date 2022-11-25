@@ -34,9 +34,10 @@
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/AED"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
-		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Cuestionario - 2_multiIdioma"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="/home/fernando/Escritorio/pregunta_1.jar"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Main (6) - 8_ReservasTablaView_SQLite"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="/home/fernando/Escritorio/reservas.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/home/fernando/Escritorio/reservas.jar"/>
 			<item value="/home/fernando/Escritorio/pregunta_1.jar"/>
 			<item value="/home/fernando/Escritorio/pregunta_2.jar"/>
 			<item value="/home/fernando/Escritorio/pregunta_3.jar"/>

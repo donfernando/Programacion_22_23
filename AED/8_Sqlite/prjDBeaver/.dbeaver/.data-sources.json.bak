@@ -1,0 +1,40 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-184807651d6-7210e0e964dfd807": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "reservas.sqlite",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/AED/8_Sqlite/prjDBeaver/reservas.sqlite",
+				"url": "jdbc:sqlite:/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/AED/8_Sqlite/prjDBeaver/reservas.sqlite",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"sqlite_jdbc-184807651d6-7210e0e964dfd807": {
+			":Estancias": {
+				"properties": {
+					"erd.diagram.state": {
+						"serialized": "\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202211161301\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"sqlite_jdbc-184807651d6-7210e0e964dfd807\"\u003e\u003centity id\u003d\"1\" name\u003d\"Estancias\" fq-name\u003d\"Estancias\" order\u003d\"0\" color-bg\u003d\"255,128,64\" x\u003d\"20\" y\u003d\"20\"/\u003e\u003centity id\u003d\"2\" name\u003d\"Habitaciones\" fq-name\u003d\"Habitaciones\" order\u003d\"1\" x\u003d\"262\" y\u003d\"77\"/\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"fk_nHab\" fq-name\u003d\"Estancias.fk_nHab\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"1\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
