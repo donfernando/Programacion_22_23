@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-1847b8ae5fb-6dd3f105ce521edd": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "reservas.sqlite",
+			"save-password": true,
+			"read-only": false,
+			"virtual-model-id": "sqlite_jdbc-1847b779637-36acb38481a57c67",
+			"configuration": {
+				"database": "/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/AED/8_Sqlite/prjDBeaver/reservas.sqlite",
+				"url": "jdbc:sqlite:/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/AED/8_Sqlite/prjDBeaver/reservas.sqlite",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

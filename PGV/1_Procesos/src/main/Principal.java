@@ -12,7 +12,7 @@ public class Principal {
 			BufferedReader bf = new BufferedReader(new InputStreamReader(out.getInputStream()));
 			String linea;
 			while ((linea = bf.readLine()) != null) {
-				System.out.println(linea);
+				System.out.println(linea.toUpperCase());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
