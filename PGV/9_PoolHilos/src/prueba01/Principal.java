@@ -5,9 +5,7 @@ import java.util.logging.Logger;
 
 public class Principal {
 	public static void main(String[] args) {
-		//import java.util.concurrent.*;
-		//import java.util.*;
-		 
+
 		int poolSize = 2;
 		int maxPoolSize = 2;
 		long keepAliveTime = 10;
