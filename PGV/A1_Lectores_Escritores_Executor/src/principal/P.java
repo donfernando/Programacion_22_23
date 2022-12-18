@@ -23,7 +23,7 @@ public class P {
 		ArrayBlockingQueue<Runnable> queue = 
 		        new ArrayBlockingQueue<Runnable>(20);
 		ThreadPoolExecutor threadPool = 
-		        new ThreadPoolExecutor(8, 8,10, TimeUnit.SECONDS, queue);
+		        new ThreadPoolExecutor(12, 12,10, TimeUnit.SECONDS, queue);
 		
 		
 		for (int i = 1; i <= 20; i++) {

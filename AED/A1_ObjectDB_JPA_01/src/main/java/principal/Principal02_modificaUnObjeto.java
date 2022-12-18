@@ -29,12 +29,12 @@ public class Principal02_modificaUnObjeto {
             System.out.print(p);
         }
 
-//        em.getTransaction().begin();
+        em.getTransaction().begin();
         results.get(0).setNombre("Sonia");
         results.get(0).setEdad(28);
-//        em.getTransaction().commit();
+        em.getTransaction().commit();
         
-        System.out.println(results.get(0));
+//        System.out.println(results.get(0));
         
         for (Persona p : results) {
             System.out.print(p);
