@@ -9,6 +9,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
+import entidades.Boletin;
 import entidades.Persona;
 
 public class Principal01_creaDatos {
@@ -46,12 +47,33 @@ public class Principal01_creaDatos {
 		Query q3 = em.createQuery("SELECT AVG(p.edad) FROM Persona p");
 		System.out.println("Edad promedio: " + q3.getSingleResult());
 
-		// Retrieve all the Point objects from the database:
+		// Retrieve:
 		TypedQuery<Persona> query = em.createQuery("SELECT p FROM Persona p", Persona.class);
-		List<Persona> results = query.getResultList();
-		for (Persona p : results) {
-			System.out.println(p);
+		List<Persona> entidadesPersona = query.getResultList();
+		for (Persona p : entidadesPersona) {
+			System.out.println(p.getNombre());
 		}
+		
+		
+		// Retrieve:
+//		TypedQuery<Persona> query = em.createQuery("SELECT p FROM Persona p", Persona.class);
+//		List<Persona> results = query.getResultList();
+//		for (Persona p : results) {
+//			System.out.println(p);
+//		}
+//		List<Boletin> boletines = em.createQuery("SELECT b FROM Boletin b", Boletin.class).getResultList();
+//		for (Boletin b : boletines) {
+//			System.out.println(b);
+//		}
+		Boletin b = em.find(Boletin.class, 58);
+		System.out.println(b);
+		
+		int i=0;
+		while(i<entidadesPersona.size() && !entidadesPersona.get(i).getCalificaciones().equals(b))
+			i++;
+		if(i<entidadesPersona.size())
+			System.out.printf("El boletin es de %s",entidadesPersona.get(i).getNombre());
+		
 		em.close();
 		emf.close();
 	}

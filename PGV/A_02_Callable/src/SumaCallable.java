@@ -44,9 +44,10 @@ public class SumaCallable {
 
 		List<Future<Integer>> responses = new ArrayList<>();
 
-		for (Callable<Integer> t : tareas) {
-			responses.add(executor.submit(t));
-		}
+//		for (Callable<Integer> t : tareas) {
+//			responses.add(executor.submit(t));
+//		}
+		executor.invokeAll(tareas);
 		executor.shutdown();
 
 		int total = 0;

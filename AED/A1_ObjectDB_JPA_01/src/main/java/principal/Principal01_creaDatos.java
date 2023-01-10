@@ -34,7 +34,6 @@ public class Principal01_creaDatos {
            Integer e = (int)(Math.random()*30)+10; // [10,39]
            String n = String.format("Persona %d",i);
             Persona p = new Persona(n,e);
-//            em.persist(p);
             em.persist(p);
         }
         em.getTransaction().commit();
