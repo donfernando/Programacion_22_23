@@ -15,7 +15,7 @@ public class Persona {
 	private String nombre;
 	private Integer edad;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne
 	private Boletin boletin;
 	
 	public Persona() {

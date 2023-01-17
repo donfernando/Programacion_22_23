@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+ version="1.0">
+
+   <persistence-unit name="boletinesDeNotas">
+     <description>Base de Datos ObjectDB con personas y sus boletines de notas</description>
+     <provider>com.objectdb.jpa.Provider</provider>
+     <properties>
+       <property name="javax.persistence.jdbc.url"
+                 value="db/personas.odb"/>
+       <property name="javax.persistence.jdbc.user" value=""/>
+       <property name="javax.persistence.jdbc.password" value=""/>
+     </properties>
+   </persistence-unit>
+
+</persistence>

@@ -23,6 +23,8 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="contextSelector.size.x" value="313"/>
+		<item key="contextSelector.size.y" value="243"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -96,5 +98,18 @@
 		<item key="DIALOG_WIDTH" value="426"/>
 		<item key="DIALOG_HEIGHT" value="609"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/home/fernando/Documentos/0_DocumentosTrabajo/Programacion_22_23/PGV"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Cliente - B_01_Sockets_ejemploCliente"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="/home/fernando/Escritorio/Cliente_socket.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/home/fernando/Escritorio/Cliente_socket.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value=".xml"/>
+		</list>
 	</section>
 </section>
