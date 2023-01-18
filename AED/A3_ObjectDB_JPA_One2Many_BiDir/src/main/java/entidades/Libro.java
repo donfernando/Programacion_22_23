@@ -106,11 +106,9 @@ public class Libro {
 			return false;
 		Libro other = (Libro) obj;
 		if (isbn == null) {
-			if (other.isbn != null)
-				return false;
+			return false;			
 		} else if (!isbn.equals(other.isbn))
 			return false;
 		return true;
 	}
-
 }
