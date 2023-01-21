@@ -1,5 +1,6 @@
 package entidades;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,17 +9,20 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Copia {
 
+	public static final boolean DETERIORADO = true;
+	public static final boolean COMO_NUEVO = false;
+	
 	@Id
 	@GeneratedValue
 	private int id_copia;
 	private boolean deteriorado;
-	
-	@ManyToOne
+
+	@ManyToOne(cascade = {CascadeType.ALL})
 	private Persona prestatario;
 
 	// Constructores
 	public Copia() {
-		deteriorado = false;
+		deteriorado = COMO_NUEVO;
 	}
 
 	public Copia(boolean deteriorado) {
@@ -26,7 +30,7 @@ public class Copia {
 	}
 
 	// Getters y Setters
-	public boolean isDeteriorado() {
+	public boolean getDeteriorado() {
 		return deteriorado;
 	}
 
@@ -37,24 +41,35 @@ public class Copia {
 	public int getId_copia() {
 		return id_copia;
 	}
-	
+
 	// Getters y Setters de Relaciones
-	public Persona getOwner() {
+	public Persona getPrestatario() {
 		return prestatario;
 	}
 
-	public void setOwner(Persona pres) {
+	public void addPrestatario(Persona pres) {
+		if (this.prestatario != null)
+			throw new RuntimeException("Esta copia ya está prestada");
 		this.prestatario = pres;
+		pres.getLibros().add(this);
 	}
-	
+
+	public void removePrestatario() {
+		if (this.prestatario == null)
+			throw new RuntimeException("Esta copia no está prestada");
+		this.prestatario.getLibros().remove(this);
+		prestatario = null;
+	}
+
 	// toString y equals
 	@Override
 	public String toString() {
-		String deterioro = "Copia [" + id_copia + "]. Deterioro ";
-		if (!deteriorado)
-			deterioro.concat("no ");
-		deterioro.concat("detectado.");
-		return deterioro;
+		String s = String.format("Copia [%d]%s", id_copia, deteriorado ? " deteriorado" : " como nuevo");
+		s = s + (prestatario != null?
+				" / prestado a "+prestatario.getApellidos()+" "+prestatario.getNombre() +
+				" [" + prestatario.getDni() + "]"
+				: "");
+		return s;
 	}
 
 	@Override

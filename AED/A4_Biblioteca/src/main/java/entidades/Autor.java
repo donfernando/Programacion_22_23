@@ -1,6 +1,7 @@
 package entidades;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -18,16 +19,16 @@ public class Autor {
 	private int id_autor;
 	@Column(unique = true)
 	private String nombre;
-	
-	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+
+	@ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE}, fetch = FetchType.EAGER)
 	private List<Libro> obras = new ArrayList<Libro>();
-	
+
 	// Constructores
-	
+
 	public Autor(String n) {
 		nombre = n;
 	}
-	
+
 	// Getters y Setters
 	public String getNombre() {
 		return nombre;
@@ -40,9 +41,9 @@ public class Autor {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
+
 	// Getters y Setters de Relaciones
-	
+
 	public List<Libro> getObras() {
 		return obras;
 	}
@@ -50,9 +51,17 @@ public class Autor {
 	// toString y equals
 	@Override
 	public String toString() {
-		return "Autor [" + id_autor + "]: " + nombre;
+	 	Collection<Libro> aux = getObras();
+	 	String obras = "";
+	 	if(aux.size()!=0) {
+		 	for (Libro libro : aux) {
+				obras+=libro.getTitulo()+", ";
+			}
+		 	obras = obras.substring(0, obras.length()-2);
+	 	}
+		return String.format("[%d]%s, autor de %s", id_autor, nombre,obras);
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
