@@ -21,14 +21,21 @@ public class Copia {
 	private Persona prestatario;
 
 	// Constructores
-	public Copia() {
-		deteriorado = COMO_NUEVO;
+	Copia() {
+		this(COMO_NUEVO);
 	}
 
-	public Copia(boolean deteriorado) {
+	Copia(boolean deteriorado) {
 		this.deteriorado = deteriorado;
 	}
 
+	
+	public Copia_Digital crearCopiaDigital(String fich, String form){
+		Copia_Digital cd = new Copia_Digital(fich, form);
+		cd.setOriginal(this);
+		return cd;
+	}
+	
 	// Getters y Setters
 	public boolean getDeteriorado() {
 		return deteriorado;

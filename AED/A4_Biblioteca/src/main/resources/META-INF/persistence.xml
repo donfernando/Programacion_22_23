@@ -13,6 +13,7 @@
                  value="db/biblioteca.odb"/>
        <property name="javax.persistence.jdbc.user" value=""/>
        <property name="javax.persistence.jdbc.password" value=""/>
+       
      </properties>
    </persistence-unit>
 

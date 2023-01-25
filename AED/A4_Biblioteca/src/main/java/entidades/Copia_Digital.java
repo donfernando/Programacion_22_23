@@ -14,12 +14,11 @@ public class Copia_Digital {
 	private Copia original;
 	
 	// Constructores
-	public Copia_Digital(String fichero) {
-		nombre_fichero = fichero;
-		formato = "";
+	Copia_Digital(String fichero) {
+		this(fichero,"");
 	}
 	
-	public Copia_Digital(String fichero, String formato) {
+	Copia_Digital(String fichero, String formato) {
 		nombre_fichero = fichero;
 		this.formato = formato;
 	}
@@ -49,7 +48,7 @@ public class Copia_Digital {
 	// toString y equals
 	@Override
 	public String toString() {
-		return "Copia digital: "+nombre_fichero+"."+formato;
+		return "Copia digital: "+nombre_fichero+" / "+formato;
 	}
 
 	@Override
