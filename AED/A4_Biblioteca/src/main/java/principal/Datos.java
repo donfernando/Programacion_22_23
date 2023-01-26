@@ -40,8 +40,8 @@ public class Datos {
 //			Copia_Digital cer1_dig = new Copia_Digital("Cerebro_RyC","pdf");
 //			Copia_Digital cer2_dig = new Copia_Digital("Ramon-Cajal-Cerebro", "prc");
 
-		Persona p1 = new Persona("54063242V", "Eduardo", "Guerra Rodríguez", "C/ El Edén, 10", "+34 618295409",
-				"eduardo.guerra.rguez@gmail.com");
+		Persona p1 = new Persona("54063242V", "Esteban", "Plaza Mayor", "C/ Turuta, 10", "+34 44488341",
+				"esteban.coesta.ocupado@gmail.com");
 		Persona p2 = new Persona("63524172L", "Paco", "Porras Padilla", "C/ Sin Nombre, 7", "+34 623121234",
 				"papopa@gmail.com");
 		Persona p3 = new Persona("81920372K", "Francisco", "Fernández Fariña", "C/ Con Nombre, 12", "+34 697386221",
