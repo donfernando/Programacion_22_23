@@ -22,12 +22,12 @@ public class Libro {
 	private String editorial, titulo;
 	private int anio_escritura;
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+	@OneToMany(  cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
 	// Unidireccional. No tiene atributo sobre el que declarar "mappedBy"
 	@JoinColumn(name = "isbn_libro",foreignKey = @ForeignKey(name = "ISBN_LIBRO_FK")) // nombre fkey, en la tabla copia para referenciar al libro
 	private List<Copia> copias = new ArrayList<Copia>();
 
-	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })// , mappedBy = "libros")
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE }, mappedBy = "libros")
 	private List<Autor> autores = new ArrayList<Autor>();
 
 	// Constructores

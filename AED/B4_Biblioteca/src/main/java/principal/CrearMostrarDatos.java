@@ -15,7 +15,9 @@ public class CrearMostrarDatos {
 		System.out.print("Desea eliminar los datos de anteriores ocasiones (S/N)? ");
 		boolean mantenerDatos = Character.toLowerCase(sc.nextLine().trim().charAt(0)) == 'n';
 
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
+		String uPersistencia = "biblioteca"+ (mantenerDatos?"":"_reseteada");		
+//		String uPersistencia = "biblioteca";		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory(uPersistencia);
 		EntityManager em = emf.createEntityManager();
 
 		if (!mantenerDatos) {

@@ -15,11 +15,11 @@ public class Datos {
 	public static void crear(EntityManager em) {
 		em.getTransaction().begin();
 
-		em.createQuery("DELETE FROM Autor").executeUpdate();
-		em.createQuery("DELETE FROM Libro").executeUpdate();
-		em.createQuery("DELETE FROM Copia").executeUpdate();
-		em.createQuery("DELETE FROM Copia_Digital").executeUpdate();
-		em.createQuery("DELETE FROM Persona").executeUpdate();
+//		em.createQuery("DELETE FROM Autor").executeUpdate();
+//		em.createQuery("DELETE FROM Libro").executeUpdate();
+//		em.createQuery("DELETE FROM Copia").executeUpdate();
+//		em.createQuery("DELETE FROM Copia_Digital").executeUpdate();
+//		em.createQuery("DELETE FROM Persona").executeUpdate();
 
 		Autor autor2 = new Autor("Fernando");
 		Autor autor3 = new Autor("Ramón");
@@ -67,7 +67,12 @@ public class Datos {
 	}
 
 	public static void mostrar(EntityManager em) {
+
+		System.out.println();
+		System.out.println("Libros y sus copia registradas");
+		System.out.println("******************************\n");
 		List<Libro> libros = em.createQuery("SELECT lib FROM Libro lib", Libro.class).getResultList();
+//		List<Libro> libros = em.createQuery("SELECT DISTINCT lib FROM Libro lib JOIN FETCH lib.copias", Libro.class).getResultList();
 		for (Libro l : libros) {
 			System.out.println(l);
 			for (Copia cp : l.getCopias()) {
@@ -75,8 +80,9 @@ public class Datos {
 			}
 		}
 		
-		System.out.println("\n***********************\n");
+		System.out.println("\n");
 		System.out.println("Socios y prestamos actuales");
+		System.out.println("***************************");
 		List<Persona> personas = em.createQuery("SELECT per FROM Persona per", Persona.class).getResultList();
 		for (Persona p : personas) {
 			System.out.println();
