@@ -13,7 +13,7 @@ public class EliminaUnaCopiaDeAlgunos {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
 		EntityManager em = emf.createEntityManager();
 
-		List<Object[]> pares = em.createQuery("SELECT l, COUNT(c.id_copia) FROM"
+		List<Object[]> pares = em.createQuery("SELECT l, COUNT(c.id_copia) as repet FROM"
 												+ " Copia c JOIN Libro l ON c MEMBER OF l.copias GROUP BY l.isbn").getResultList();
 		List<Libro> libros;
 
