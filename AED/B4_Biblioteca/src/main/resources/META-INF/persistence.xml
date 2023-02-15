@@ -8,12 +8,12 @@
 		<description>Base de Datos Hibernate simulando una biblioteca</description>
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-<!-- 		<class>entidades.Persona</class>
+		<class>entidades.Persona</class>
 		<class>entidades.Autor</class>
 		<class>entidades.Copia</class>
 		<class>entidades.Libro</class>
 		<class>entidades.Copia_Digital</class>
- -->
+
  		<properties>
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://localhost:3306/la_biblioteca" />
@@ -26,7 +26,7 @@
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
  			<property
-				name="javax.persistence.schema-generation.database.action"
+				name="hibernate.hbm2ddl.auto"
 				value="update" />
 
 			<property name="hibernate.show_sql" value="true" />
@@ -39,12 +39,12 @@
 		<description>Base de Datos Hibernate simulando una biblioteca</description>
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-<!-- 		<class>entidades.Persona</class>
+ 		<class>entidades.Persona</class>
 		<class>entidades.Autor</class>
 		<class>entidades.Copia</class>
 		<class>entidades.Libro</class>
 		<class>entidades.Copia_Digital</class>
- -->
+ 
  		<properties>
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://localhost:3306/la_biblioteca" />
@@ -56,8 +56,8 @@
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
 			<property
-				name="javax.persistence.schema-generation.database.action"
-				value="drop-and-create" />
+				name="hibernate.hbm2ddl.auto"
+				value="create" />
 				
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="false" />

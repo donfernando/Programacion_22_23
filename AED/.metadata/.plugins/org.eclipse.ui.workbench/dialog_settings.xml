@@ -17,10 +17,11 @@
 		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="ObjectDB Explorer"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.fx.ide.jdt.ui.javafx"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jpt.jpa.ui.wizard.newEntitiesFromTables"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.datatools.connectivity"/>
 			<item value="org.eclipse.fx.ide"/>
+			<item value="org.eclipse.jpt.jpa"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
 	</section>

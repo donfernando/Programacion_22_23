@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.w3c.dom.DOMImplementation"/>
-    <fullyQualifiedTypeName name="javax.swing.text.Document"/>
-    <fullyQualifiedTypeName name="javax.lang.model.element.Element"/>
-    <fullyQualifiedTypeName name="org.w3c.dom.Text"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.TransformerFactory"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.Source"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.Result"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.dom.DOMSource"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.stream.StreamResult"/>
-    <fullyQualifiedTypeName name="javax.xml.transform.Transformer"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
-    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
     <fullyQualifiedTypeName name="org.w3c.dom.NodeList"/>
@@ -35,7 +22,6 @@
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
     <fullyQualifiedTypeName name="entidades.Boletin"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -48,7 +34,6 @@
     <fullyQualifiedTypeName name="entidades.Persona"/>
     <fullyQualifiedTypeName name="entidades.Copia"/>
     <fullyQualifiedTypeName name="entidades.Libro"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
@@ -59,5 +44,20 @@
     <fullyQualifiedTypeName name="javax.persistence.MappedSuperclass"/>
     <fullyQualifiedTypeName name="javax.persistence.Inheritance"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="entidades.Hotel"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="entidades.HabitacionPK"/>
+    <fullyQualifiedTypeName name="entidades.Habitacion"/>
+    <fullyQualifiedTypeName name="logicaNegocio.entidades.Hotel"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="logicaNegocio.entidades.Habitacion"/>
+    <fullyQualifiedTypeName name="logicaNegocio.entidades.Estancia"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.ObjectProperty"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleObjectProperty"/>
 </qualifiedTypeNameHistroy>

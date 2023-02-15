@@ -42,7 +42,7 @@ public class Estancia implements Serializable {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	private void setId(int id) {
 		this.id = id;
 	}
 

@@ -28,7 +28,7 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="2"/>
+		<item key="pageIndex" value="0"/>
 	</section>
 	<section name="FatJarPackageWizard">
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
