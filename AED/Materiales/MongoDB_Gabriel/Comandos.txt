@@ -1,0 +1,29 @@
+
+show databases;
+
+use pruebaDAM;
+
+db.people.find().pretty();
+
+user11={
+'name': "rodolfo",
+'age': 46,
+'height':145
+}
+db.people.insertOne(user11);
+
+db.people.remove({name:"rodolfo"});
+
+
+db.people.find({age: {$gt:10}}).count();
+
+db.people.find({},{"name":true}).pretty();
+
+var encontrarUser=db.people.find({adress:true}).pretty();
+
+db.people.insertOne({name:"user50",age:50,height:150,adress:"España"});
+
+var encontrarUser = db.people.find({adress: {$exists: true}});
+
+encontrarUser
+
